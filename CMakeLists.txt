@@ -11,7 +11,6 @@ include_directories(
 link_directories(
   "~/caffe/build/lib"
   "/usr/local/cuda/lib64"
-  "~/bitbucket/kureha/experimental/lib"
   )
 
 add_executable(
