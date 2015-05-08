@@ -17,5 +17,5 @@ GCC 4.8.2 or later
 DA in_path out_path  
 2. ライブラリの場合  
 #include <da.h>  
-DA da(cv::Mat in);  
-cv::Mat out = da();  
+DA da;  
+cv::Mat out = da(cv::Mat in);  
