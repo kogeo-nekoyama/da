@@ -54,6 +54,6 @@ install(
   ARCHIVE DESTINATION lib
   )
 install(
-  FILES src/da.cpp
-  DESTINATION include
+  FILES inc/da.h
+  DESTINATION include/da
   )
