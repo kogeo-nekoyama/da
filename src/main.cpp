@@ -5,6 +5,7 @@
 int main(int argc, char** argv){
   if(argc < 3){
     std::cout << "Usage : da in_path out_path" << std::endl;
+    return -1;
   }
   std::string in_path(argv[1]);
   std::string out_path(argv[2]);
