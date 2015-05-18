@@ -4,13 +4,9 @@ project(DA)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ./build)
 
 include_directories(
-  "~/caffe/include"
-  "/usr/local/cuda-6.5/include"
   "./inc"
   )
 link_directories(
-  "~/caffe/build/lib"
-  "/usr/local/cuda/lib64"
   )
 
 add_executable(
@@ -21,11 +17,10 @@ add_executable(
 set_target_properties(
   DA
   PROPERTIES
-  COMPILE_FLAGS "-pg -std=c++1y -O2"
+  COMPILE_FLAGS "-std=c++1y -O2"
   )
 target_link_libraries(
   DA
-  glog
   opencv_core
   opencv_imgproc
   opencv_highgui
@@ -39,11 +34,10 @@ add_library(
 set_target_properties(
   da
   PROPERTIES
-  COMPILE_FLAGS "-pg -std=c++1y -O2"
+  COMPILE_FLAGS "-std=c++1y -O2"
   )
 target_link_libraries(
   da
-  glog
   opencv_core
   opencv_imgproc
   opencv_highgui
